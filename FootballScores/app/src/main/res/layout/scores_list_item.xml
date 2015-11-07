@@ -16,11 +16,13 @@
             android:layout_weight="1"
             android:orientation="vertical">
             <ImageView
+                android:contentDescription="@string/content_desc_home_team_crest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:id="@+id/home_crest"/>
             <TextView
+                android:contentDescription="@string/content_desc_home_team_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -35,6 +37,7 @@
             android:layout_weight="1"
             android:orientation="vertical">
             <TextView
+                android:contentDescription="@string/content_desc_match_score"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -44,6 +47,7 @@
                 android:textSize="@dimen/Score"
                 android:id="@+id/score_textview"/>
             <TextView
+                android:contentDescription="@string/content_desc_match_time"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -59,11 +63,13 @@
             android:layout_weight="1"
             android:orientation="vertical">
             <ImageView
+                android:contentDescription="@string/content_desc_away_team_crest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:id="@+id/away_crest"/>
             <TextView
+                android:contentDescription="@string/content_desc_away_team_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
