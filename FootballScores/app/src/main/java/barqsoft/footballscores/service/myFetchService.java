@@ -90,7 +90,7 @@ public class myFetchService extends IntentService
         }
         catch (Exception e)
         {
-            Log.e(LOG_TAG,"Exception here" + e.getMessage());
+            Log.e(LOG_TAG,"Exception here " + e.getMessage());
         }
         finally {
             if(m_connection != null)
@@ -196,7 +196,13 @@ public class myFetchService extends IntentService
                         League.equals(SERIE_A)             ||
                         League.equals(BUNDESLIGA1)         ||
                         League.equals(BUNDESLIGA2)         ||
-                        League.equals(PRIMERA_DIVISION)     )
+                        League.equals(Bundesliga3)         ||
+                        League.equals(LIGUE1)              ||
+                        League.equals(LIGUE2)              ||
+                        League.equals(PRIMERA_DIVISION)    ||
+                        League.equals(SEGUNDA_DIVISION)    ||
+                        League.equals(PRIMERA_LIGA)        ||
+                        League.equals(EREDIVISIE) || League.equals("357")     )
                 {
                     match_id = match_data.getJSONObject(LINKS).getJSONObject(SELF).
                             getString("href");
