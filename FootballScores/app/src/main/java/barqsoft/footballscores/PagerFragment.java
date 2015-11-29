@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 /**
  * Created by yehya khaled on 2/27/2015.
@@ -33,7 +32,7 @@ public class PagerFragment extends Fragment
         for (int i = 0;i < NUM_PAGES;i++)
         {
             viewFragments[i] = new MainScreenFragment();
-            viewFragments[i].setFragmentDate(Utilies.getFragmentDate(i-2));
+            viewFragments[i].setFragmentDate(Utilies.getFragmentDate(getContext(), i-2));
         }
         mPagerHandler.setAdapter(mPagerAdapter);
         mPagerHandler.setCurrentItem(MainActivity.current_fragment);

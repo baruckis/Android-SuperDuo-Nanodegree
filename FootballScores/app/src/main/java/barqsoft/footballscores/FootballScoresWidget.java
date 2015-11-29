@@ -69,8 +69,6 @@ public class FootballScoresWidget extends AppWidgetProvider {
         // Enter relevant functionality for when the last widget is disabled
     }
 
-
-
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     private void setRemoteAdapter(Context context, @NonNull final RemoteViews views) {
         views.setRemoteAdapter(R.id.matches_list,

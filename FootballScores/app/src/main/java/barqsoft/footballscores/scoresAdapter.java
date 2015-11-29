@@ -48,12 +48,10 @@ public class scoresAdapter extends CursorAdapter
         mHolder.home_name.setText(cursor.getString(COL_HOME));
         mHolder.away_name.setText(cursor.getString(COL_AWAY));
         mHolder.date.setText(cursor.getString(COL_MATCHTIME));
-        mHolder.score.setText(Utilies.getScores(cursor.getInt(COL_HOME_GOALS),cursor.getInt(COL_AWAY_GOALS)));
+        mHolder.score.setText(Utilies.getScores(context, cursor.getInt(COL_HOME_GOALS),cursor.getInt(COL_AWAY_GOALS)));
         mHolder.match_id = cursor.getDouble(COL_ID);
-        mHolder.home_crest.setImageResource(Utilies.getTeamCrestByTeamName(
-                cursor.getString(COL_HOME)));
-        mHolder.away_crest.setImageResource(Utilies.getTeamCrestByTeamName(
-                cursor.getString(COL_AWAY)
+        mHolder.home_crest.setImageResource(Utilies.getTeamCrestByTeamName(context, cursor.getString(COL_HOME)));
+        mHolder.away_crest.setImageResource(Utilies.getTeamCrestByTeamName(context, cursor.getString(COL_AWAY)
         ));
         //Log.v(FetchScoreTask.LOG_TAG,mHolder.home_name.getText() + " Vs. " + mHolder.away_name.getText() +" id " + String.valueOf(mHolder.match_id));
         //Log.v(FetchScoreTask.LOG_TAG,String.valueOf(detail_match_id));
@@ -68,10 +66,9 @@ public class scoresAdapter extends CursorAdapter
             container.addView(v, 0, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT
                     , ViewGroup.LayoutParams.MATCH_PARENT));
             TextView match_day = (TextView) v.findViewById(R.id.matchday_textview);
-            match_day.setText(Utilies.getMatchDay(cursor.getInt(COL_MATCHDAY),
-                    cursor.getInt(COL_LEAGUE)));
+            match_day.setText(Utilies.getMatchDay(context, cursor.getInt(COL_MATCHDAY), cursor.getInt(COL_LEAGUE)));
             TextView league = (TextView) v.findViewById(R.id.league_textview);
-            league.setText(Utilies.getLeague(cursor.getInt(COL_LEAGUE)));
+            league.setText(Utilies.getLeague(context, cursor.getInt(COL_LEAGUE)));
             Button share_button = (Button) v.findViewById(R.id.share_button);
             share_button.setOnClickListener(new View.OnClickListener() {
                 @Override

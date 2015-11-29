@@ -52,4 +52,35 @@
     <!-- Widget texts -->
     <string name="no_matches_for_today">No matches for today.</string>
 
+
+    <string name="league_serie_a_name" translatable="false">"Serie A"</string>
+    <string name="league_premier_name" translatable="false">"Premier League"</string>
+    <string name="league_uefa_champions_name" translatable="false">"UEFA Champions League"</string>
+    <string name="league_primera_division_name" translatable="false">"Primera Division"</string>
+    <string name="league_bundesliga_name" translatable="false">"Bundesliga"</string>
+
+    <string name="league_name_not_known_msg">"Not known league. Please report."</string>
+
+    <string name="match_day_group_stages_msg">"Group Stages, Matchday : 6"</string>
+    <string name="match_day_first_knockout_msg">"First Knockout round"</string>
+    <string name="match_day_quarterfinal_msg">"QuarterFinal"</string>
+    <string name="match_day_semifinal_msg">"SemiFinal"</string>
+    <string name="match_day_final_msg">"Final"</string>
+    <string name="match_day_msg">"Matchday : "</string>
+
+    <string name="scores_separator" translatable="false">" - "</string>
+
+    <string name="team_arsenal_london_fc_name" translatable="false">"Arsenal London FC"</string>
+    <string name="team_manchester_united_fc_name" translatable="false">"Manchester United FC"</string>
+    <string name="team_swansea_city_name" translatable="false">"Swansea City"</string>
+    <string name="team_leicester_city_name" translatable="false">"Leicester City"</string>
+    <string name="team_everton_fc_name" translatable="false">"Everton FC"</string>
+    <string name="team_west_ham_united_fc_name" translatable="false">"West Ham United FC"</string>
+    <string name="team_tottenham_hotspur_fc_name" translatable="false">"Tottenham Hotspur FC"</string>
+    <string name="team_west_bromwich_albion_name" translatable="false">"West Bromwich Albion"</string>
+    <string name="team_sunderland_afc_name" translatable="false">"Sunderland AFC"</string>
+    <string name="team_stoke_city_fc_name" translatable="false">"Stoke City FC"</string>
+
+    <string name="date_pattern" translatable="false">"yyyy-MM-dd"</string>
+
 </resources>
